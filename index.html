@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abidh Uddin's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 15px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        .section {
+            padding: 60px 20px;
+        }
+        .section-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .intro h1, .section h2 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .intro p {
+            font-size: 1.2em;
+        }
+        .projects img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .projects img:hover {
+            transform: scale(1.05);
+        }
+        .projects div {
+            margin-bottom: 40px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills ul li {
+            background: #4CAF50;
+            color: white;
+            margin: 10px;
+            padding: 15px 25px;
+            border-radius: 20px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+        .skills ul li:hover {
+            background: #45a049;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 15px;
+            transition: background-color 0.3s;
+        }
+        .contact form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #4CAF50;
+        }
+        @media (max-width: 768px) {
+            .skills ul li {
+                flex: 1 1 100%;
+            }
+            .intro h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Abidh Uddin Portfolio</h1>
+    <div class="social-icons">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="section intro" id="home">
+    <div class="section-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Abidh Uddin, a student of University Of Rajshahi. This is a showcase of my work and skills.</p>
+    </div>
+</div>
+
+<div class="section projects" id="projects">
+    <div class="section-content">
+        <h2>Projects</h2>
+        <div>
+            <h3>Project 1</h3>
+            <img src="project1.jpg" alt="Project 1">
+            <p>Description of Project 1.</p>
+        </div>
+        <div>
+            <h3>Project 2</h3>
+            <img src="project2.jpg" alt="Project 2">
+            <p>Description of Project 2.</p>
+        </div>
+        <div>
+            <h3>Project 3</h3>
+            <img src="project3.jpg" alt="Project 3">
+            <p>Its About Presentation Guidelines.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section skills" id="skills">
+    <div class="section-content">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Python</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section contact" id="contact">
+    <div class="section-content">
+        <h2>Contact</h2>
+        <form action="https://example.com/submit" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Abidh Uddin. All rights reserved.</p>
+</div>
+
+</body>
+</html>
